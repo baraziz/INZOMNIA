@@ -27,9 +27,14 @@
                   <td class="align-middle">{{ $product->nama }}</td>
                   <td class="text-center align-middle">{{ $product->kategori }}</td>
                   <td class="text-center align-middle">
-                     <a class="btn btn-sm bg-info text-dark" href="#" role="button"><i class="bi bi-eye"></i></a>
+                     <a class="btn btn-sm bg-info text-dark" href="/admin/produk/{{ $product->id }}" role="button"><i class="bi bi-eye"></i></a>
                      <a class="btn btn-sm bg-warning text-dark" href="/admin/produk/{{ $product->id }}/edit " role="button"><i class="bi bi-pencil-square"></i></a>
-                     <a class="btn btn-sm bg-danger text-white" href="#" role="button"><i class="bi bi-trash"></i></a>
+                     <form class="d-inline" action="/admin/produk/{{ $product->id }}" method="post">
+                        @method('delete')
+                        @csrf
+                        <button class="btn btn-sm bg-danger text-white" type="submit"><i class="bi bi-trash"></i></button>
+                        {{-- <a class="btn btn-sm bg-danger text-white" href="#" role="button"></a> --}}
+                     </form>
                   </td>
                </tr>
             @endforeach

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use App\Models\Barang;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class ProdukController extends Controller
 {
@@ -65,9 +66,11 @@ class ProdukController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(Barang $barang)
     {
-        //
+        $barang->foto = asset('storage/' . $barang->foto);
+        $barang->harga = number_format($barang->harga, 0, ',', '.');
+        return view('admin.produk.show', $barang);
     }
 
     /**
@@ -96,17 +99,37 @@ class ProdukController extends Controller
         ]);
 
         if ($request->file('foto')) {
+            Storage::delete($barang->foto);
             $validatedData['foto'] = $request->file('foto')->store('barang');
+        } else {
+            $validatedData['foto'] = $barang->foto;
         }
 
-        dd($validatedData);
+        $barang->update([
+            'nama' => $validatedData['nama'],
+            'ukuran_s' => $validatedData['ukuran_s'],
+            'ukuran_m' => $validatedData['ukuran_m'],
+            'ukuran_l' => $validatedData['ukuran_l'],
+            'ukuran_xl' => $validatedData['ukuran_xl'],
+            'kategori' => $validatedData['kategori'],
+            'harga' => $validatedData['harga'],
+            'deskripsi' => $validatedData['deskripsi'],
+            'foto' => $validatedData['foto']
+        ]);
+
+        return redirect()->route('produk.index');
+
+        // dd($validatedData);
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(Barang $barang)
     {
-        //
+        Storage::delete($barang->foto);
+        $barang->delete();
+
+        return redirect()->route('produk.index');
     }
 }

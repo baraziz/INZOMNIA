@@ -73,7 +73,7 @@
          </div>
 
          <div class="text-end">
-            <input class="btn btn-primary" type="submit" value="TAMBAH">
+            <input class="btn btn-primary" type="submit" value="UBAH">
          </div>
 
       </form>
