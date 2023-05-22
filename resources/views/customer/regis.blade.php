@@ -127,9 +127,8 @@
 
             <div class="container" style="">
               <div class="text-center">
-                <p style="display: flex; justify-content: center">or</p>
-                <a href="#" style="display: flex; justify-content: center">Forgot account</a>
-                <a href="#" style="display: flex; justify-content: center">Create an account</a>
+                <p style="display: flex; justify-content: center">Already have an account?</p>
+                <a href="#" style="display: flex; justify-content: center">Login</a>
               </div>
                 
             </div>
