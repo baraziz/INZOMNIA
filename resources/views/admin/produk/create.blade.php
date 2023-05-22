@@ -46,7 +46,7 @@
 
          <div class="mb-3">
             <label for="Harga" class="form-label">Harga</label>
-            <input name="harga" type="number" min="0" class="form-control border-black" id="Harga" placeholder="">
+            <input name="harga" type="number" min="0" class="form-control border-black harga" id="Harga">
          </div>
 
          <div class="mb-3">

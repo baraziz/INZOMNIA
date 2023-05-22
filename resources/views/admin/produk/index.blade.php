@@ -1,11 +1,23 @@
 @extends('admin.layout.navbar')
 
+@if (isset($title))
+   @section('nav-title', $title)
+@endif
+
+
 @section('sidebar')
    @parent
 @endsection
 
 @section('content')
    <div class="container mt-5 border rounded-3 pt-3">
+
+      @if (session('status'))
+         <div class="alert alert-success alert-dismissible fade show" role="alert">
+            {{ session('status') }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+         </div>
+      @endif
 
       <div class="container text-end">
          <a class="btn btn-primary mb-3" href="/admin/produk/create">Tambah Barang</a>
@@ -32,7 +44,7 @@
                      <form class="d-inline" action="/admin/produk/{{ $product->id }}" method="post">
                         @method('delete')
                         @csrf
-                        <button class="btn btn-sm bg-danger text-white" type="submit"><i class="bi bi-trash"></i></button>
+                        <button class="btn btn-sm bg-danger text-white" type="submit" onclick="return confirm('APA ANDA YAKIN HAPUS DATA?')"><i class="bi bi-trash"></i></button>
                         {{-- <a class="btn btn-sm bg-danger text-white" href="#" role="button"></a> --}}
                      </form>
                   </td>

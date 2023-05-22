@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Storage;
 
 class ProdukController extends Controller
 {
+    private const PAGE = "PRODUK";
     /**
      * Display a listing of the resource.
      */
@@ -16,7 +17,8 @@ class ProdukController extends Controller
     {
         $products = Barang::all('id', 'nama', 'kategori', 'harga');
         return view('admin.produk.index', [
-            'products' => $products
+            'products' => $products,
+            'title' => ProdukController::PAGE
         ]);
     }
 
@@ -60,7 +62,7 @@ class ProdukController extends Controller
             'foto' => $validatedData['foto']
         ]);
 
-        return redirect()->route('produk.index');
+        return redirect()->route('produk.index')->with('status', 'Berhasil Ditambahkan');
     }
 
     /**
@@ -117,7 +119,7 @@ class ProdukController extends Controller
             'foto' => $validatedData['foto']
         ]);
 
-        return redirect()->route('produk.index');
+        return redirect()->route('produk.index')->with('status', "Data Berhasil Diubah");
 
         // dd($validatedData);
     }

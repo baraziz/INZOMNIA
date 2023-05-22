@@ -14,7 +14,7 @@
    @section('side-navbar')
       <nav class="navbar navbar-dark bg-secondary text-white">
          <div class="container">
-            <a class="navbar-brand" href="#">ADMIN</a>
+            <a class="navbar-brand" href="#">@yield('nav-title', 'ADMIN')</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
             </button>
@@ -27,9 +27,6 @@
                   <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                      <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="/admin/produk">Produk</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
                      </li>
                      <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -45,9 +42,10 @@
                         </ul>
                      </li>
                   </ul>
-                  <form class="d-flex mt-3" role="search">
-                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                     <button class="btn btn-success" type="submit">Search</button>
+                  <hr>
+                  <form class="d-flex mt-3">
+                     {{-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> --}}
+                     <button class="btn btn-danger container-fluid" type="submit">LOGOUT</button>
                   </form>
                </div>
             </div>

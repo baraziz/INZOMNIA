@@ -7,16 +7,17 @@
 @section('content')
    <div class="container my-5 border px-3 py-3">
 
-      <div class="row">
+      <div class="row justify-content-around">
          <div class="col-6">
             <img class="col-12 img-thumbnail rounded" src="{{ $foto }}" alt="">
          </div>
-         <div class="col">
+         <div class="col pt-3">
             <div class="container">
-               <h2>{{ $nama }}</h2>
-               <h6>IDR {{ $harga }}</h6>
-               <p>Ukuran: </p>
-               <table class="table table-borderless table-striped-columns text-center">
+               <h1 class="mb-3">{{ $nama }}</h1>
+
+               <h5 class="mb-3">IDR {{ $harga }}</h5>
+
+               <table class="table table-borderless table-striped-columns text-center border">
                   <thead>
                      <tr>
                         <th scope="col">Ukuran</th>

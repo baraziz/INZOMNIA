@@ -47,7 +47,7 @@
 
          <div class="mb-3">
             <label for="Harga" class="form-label">Harga</label>
-            <input name="harga" type="number" value="{{ $harga }}" min="0" class="form-control border-black" id="Harga" placeholder="">
+            <input name="harga" type="number" value="{{ $harga }}" min="0" class="form-control border-black " id="Harga">
          </div>
 
          <div class="mb-3">
@@ -81,6 +81,7 @@
 
 
    <script src="https://cdn.ckeditor.com/ckeditor5/37.1.0/classic/ckeditor.js"></script>
+
    <script>
       ClassicEditor
          .create(document.querySelector('#editor'), {
