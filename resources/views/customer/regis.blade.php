@@ -121,18 +121,22 @@
             <label for="">Password</label>
             <input type="password" placeholder="Password" name="password">
 
-            <button type="submit" style="" value="login" name="login_btn">Registration</button>
+            <button type="submit" style="" value="login" name="login_btn">Registrasi</button>
             
             
 
-            <div class="text-center">
-              <p>or</p>
+            <div class="container" style="">
+              <div class="text-center">
+                <p style="display: flex; justify-content: center">or</p>
+                <a href="#" style="display: flex; justify-content: center">Forgot account</a>
+                <a href="#" style="display: flex; justify-content: center">Create an account</a>
+              </div>
+                
             </div>
           </div>
 
           <p>
-            <a href="">Forgot Password</a>
-          </p>
+          
         </form>
       </div>
       {{-- Right --}}
