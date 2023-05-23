@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\PakaianController;
 use App\Http\Controllers\ProdukController;
 use Illuminate\Support\Facades\Route;
 
@@ -20,4 +22,23 @@ Route::get('/', function () {
 
 Route::resource('admin/produk', ProdukController::class)->parameters([
     'produk' => 'barang'
-]);
+])->middleware(['auth', 'admin']);
+
+Route::controller(LoginController::class)->group(function () {
+    Route::middleware(['guest'])->group(function () {
+        Route::get('/login', 'index')->name('login');
+        Route::post('/login', 'login');
+    });
+    Route::post('/logout', 'toLogout')->middleware('auth');
+});
+
+Route::get('/home', function () {
+    return view('customer.homePage');
+})->name('home');
+
+Route::middleware(['auth'])->group(function () {
+    Route::controller(PakaianController::class)->group(function () {
+        Route::get('/pria', 'pria');
+        Route::get('/wanita', 'wanita');
+    });
+});

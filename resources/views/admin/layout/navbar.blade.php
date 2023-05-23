@@ -26,9 +26,10 @@
                <div class="offcanvas-body">
                   <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/home">HOME</a>
                         <a class="nav-link" aria-current="page" href="/admin/produk">Produk</a>
                      </li>
-                     <li class="nav-item dropdown">
+                     {{-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                            Dropdown
                         </a>
@@ -40,11 +41,12 @@
                            </li>
                            <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
-                     </li>
+                     </li> --}}
                   </ul>
                   <hr>
-                  <form class="d-flex mt-3">
+                  <form class="d-flex mt-3" action="/logout" method="post">
                      {{-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> --}}
+                     @csrf
                      <button class="btn btn-danger container-fluid" type="submit">LOGOUT</button>
                   </form>
                </div>
