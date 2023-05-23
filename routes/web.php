@@ -17,7 +17,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('customer.homePage');
+    // return view('welcome');
 });
 
 Route::resource('admin/produk', ProdukController::class)->parameters([
