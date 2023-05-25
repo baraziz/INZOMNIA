@@ -3,7 +3,7 @@
 @section('navbar')
    @parent
 @endsection
-
+<link rel="stylesheet" href="assets/css/card.css">
 @section('content')
    {{-- Header --}}
    <header class="text-center text-white d-flex masthead" style="background-image: url('img/bgpria.jpg')">
@@ -27,7 +27,21 @@
       <div class="container text-center">
          @foreach ($products as $product)
             <div class="row">
-               <div class="col-md-4"><a href="detailProduk1"><img src="img/pria/1.png" alt=""></a></div>
+               <div class="col-md-4"><div class="cardcontainer">
+                  <div class="photo">
+                      <img src="https://images.pexels.com/photos/2346006/pexels-photo-2346006.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=1&w=500">
+                      <div class="photos">Photos</div>
+                  </div>
+                  <div class="content">
+                      <p class="txt4">City Lights In Newyork</p>
+                      <p class="txt5">A city that never sleeps</p>
+                      <p class="txt2">New York, the largest city in the U.S., is an architectural marvel with plenty of historic monuments, magnificent buildings and countless dazzling skyscrapers.</p>
+                  </div>
+                  <div class="footer">
+                      <p><a class="waves-effect waves-light btn" href="#">Read More</a><a id="heart"><span class="like"><i class="fab fa-gratipay"></i>Like</span></a></p>
+                      <p class="txt3"><i class="far fa-clock"></i>10 Minutes Ago <span class="comments"><i class="fas fa-comments"></i>45 Comments</span></p>
+                  </div>
+              </div></div>
                <div class="col-md-4"><img src="img/pria/1.png" alt=""></div>
                <div class="col-md-4"><img src="img/pria/1.png" alt=""></div>
             </div>

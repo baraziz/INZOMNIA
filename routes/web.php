@@ -22,7 +22,7 @@ Route::get('/', function () {
 
 Route::resource('admin/produk', ProdukController::class)->parameters([
     'produk' => 'barang'
-])->middleware(['auth', 'admin']);
+]);//->middleware(['auth', 'admin']);
 
 Route::controller(LoginController::class)->group(function () {
     Route::middleware(['guest'])->group(function () {

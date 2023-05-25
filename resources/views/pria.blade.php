@@ -24,15 +24,17 @@
    {{-- Item --}}
    <section id="pilPria">
       <h2 class="text-center pb-4">Pilihan Pria</h2>
-      <div class="container text-center">
+      <div class="container">
          {{-- @foreach ($products as $product) --}}
             <div class="row">
                <div class="col-md-4" style="display: flex; justify-content: center">
                   <div class="card" style="width: 18rem;">
                      <a href="img/pria/1.png"><img src="img/pria/1.png" class="card-img-top" alt="..."></a>
                      <div class="card-body">
-                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                       <button class="btn btn-primary">Lihat Detail</button>
+                       <p class="card-text" style="font-weight: 800">Nama Barang</p>
+                       <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                       <p class="card-text">Harga :</p>
+                       <button class="btn btn-primary"><a href="detailProduk1" style="color: white; text-decoration: none;">Lihat Detail</a></button>
                      </div>
                    </div>
                </div>
@@ -40,7 +42,9 @@
                   <div class="card" style="width: 18rem;">
                      <a href="img/pria/2.png"><img src="img/pria/2.png" class="card-img-top" alt="..."></a>
                      <div class="card-body">
-                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text" style="font-weight: 800">Nama Barang</p>
+                        <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                        <p class="card-text">Harga :</p>
                        <button class="btn btn-primary">Lihat Detail</button>
                      </div>
                    </div>
@@ -49,7 +53,9 @@
                   <div class="card" style="width: 18rem;">
                      <a href="img/pria/3.png"><img src="img/pria/3.png" class="card-img-top" alt="..."></a>
                      <div class="card-body">
-                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text" style="font-weight: 800">Nama Barang</p>
+                        <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                        <p class="card-text">Harga : </p>
                        <button class="btn btn-primary">Lihat Detail</button>
                      </div>
                    </div>
