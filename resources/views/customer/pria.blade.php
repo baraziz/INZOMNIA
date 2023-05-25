@@ -25,7 +25,8 @@
    <section id="pilPria">
       <h2 class="text-center pb-4">Pilihan Pria</h2>
       <div class="container text-center">
-         @foreach ($products as $product)
+<<<<<<< HEAD
+         {{-- @foreach ($products as $product) --}}
             <div class="row">
                <div class="col-md-4"><div class="cardcontainer">
                   <div class="photo">
@@ -45,12 +46,32 @@
                <div class="col-md-4"><img src="img/pria/1.png" alt=""></div>
                <div class="col-md-4"><img src="img/pria/1.png" alt=""></div>
             </div>
-         @endforeach
+         {{-- @endforeach --}}
          <div class="row pt-4 mt-3">
+=======
+         <div class="row">
+            @php($num = 1)
+            @foreach ($products as $product)
+               <div class="col-md-4">
+                  <a href="detailProduk1">
+                     <img class="col-12 img-thumbnail" style="height: 30rem" src="{{ asset('storage/' . $product->foto) }}" alt="">
+                  </a>
+               </div>
+               @if ($num % 3 === 0)
+                  <div class="w-100 mb-4"></div>
+                  @php($num = 1)
+               @endif
+               @php($num++)
+            @endforeach
+         </div>
+         {{-- <div class="col-md-4"><img src="img/pria/1.png" alt=""></div>
+            <div class="col-md-4"><img src="img/pria/1.png" alt=""></div> --}}
+         {{-- <div class="row pt-4 mt-3">
+>>>>>>> 1786bf4c5d81c34dec2f0c4168a713638fad9f87
             <div class="col-md-4"><a href="detailProduk1"><img src="img/pria/1.png" alt=""></a></div>
             <div class="col-md-4"><img src="img/pria/1.png" alt=""></div>
             <div class="col-md-4"><img src="img/pria/1.png" alt=""></div>
-         </div>
+         </div> --}}
       </div>
    </section>
 @endsection
