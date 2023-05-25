@@ -25,20 +25,17 @@
 
 {{-- Item --}}
 <section id="pilPria">
-    <h2 class="text-center pb-4">Pilihan Pria</h2>
+    <h2 class="text-center" style="margin-bottom: -100px">Pilihan Pria</h2>
     <div class="container">
+      {{-- Kolom 1 --}}
         <div class="row">
-            <div
-                class="col-md-4"
-                style="display: flex; justify-content: center">
+         {{-- 1 --}}
+            <div class="col-lg-4 col-md-12" style="display: flex; justify-content: center">
                 <div class="containerCard">
                     <div class="products">
                         <div class="product">
                             <div class="image">
-                                <img
-                                    src="https://www.panasonic.com/content/dam/pim/id/id/RZ/RZ-S50/RZ-S500WE/ast-1145400.png.pub.png?resize=272%3A204"
-                                    alt=""
-                                />
+                                <img src="img/pria/1.png" alt="" />
                             </div>
                             <div class="namePrice">
                                 <h3>earphone</h3>
@@ -56,24 +53,20 @@
                                 <i class="fa-solid fa-star"></i>
                             </div>
                             <div class="bay">
-                                <button>bay now</button>
+                                <button>buy now</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div
-                class="col-md-4"
-                style="display: flex; justify-content: center"
-            >
+
+            {{-- 2 --}}
+            <div class="col-lg-4 col-md-12" style="display: flex; justify-content: center">
             <div class="containerCard">
                <div class="products">
                    <div class="product">
                        <div class="image">
-                           <img
-                               src="https://www.panasonic.com/content/dam/pim/id/id/RZ/RZ-S50/RZ-S500WE/ast-1145400.png.pub.png?resize=272%3A204"
-                               alt=""
-                           />
+                           <img src="img/pria/2.png" alt="" />
                        </div>
                        <div class="namePrice">
                            <h3>earphone</h3>
@@ -91,14 +84,16 @@
                            <i class="fa-solid fa-star"></i>
                        </div>
                        <div class="bay">
-                           <button>bay now</button>
+                           <button>buy now</button>
                        </div>
                    </div>
                </div>
            </div>
             </div>
+
+            {{-- 3 --}}
             <div
-                class="col-md-4"
+                class="col-lg-4 col-md-12"
                 style="display: flex; justify-content: center"
             >
             <div class="containerCard">
@@ -106,7 +101,7 @@
                    <div class="product">
                        <div class="image">
                            <img
-                               src="https://www.panasonic.com/content/dam/pim/id/id/RZ/RZ-S50/RZ-S500WE/ast-1145400.png.pub.png?resize=272%3A204"
+                               src="img/pria/1.png"
                                alt=""
                            />
                        </div>
@@ -126,7 +121,7 @@
                            <i class="fa-solid fa-star"></i>
                        </div>
                        <div class="bay">
-                           <button>bay now</button>
+                           <button>buy now</button>
                        </div>
                    </div>
                </div>
@@ -134,72 +129,106 @@
             </div>
         </div>
 
-        <div class="row pt-4 mt-3">
-            <div
-                class="col-md-4"
-                style="display: flex; justify-content: center"
-            >
-                <div class="card" style="width: 18rem">
-                    <a href="img/pria/4.png"
-                        ><img
-                            src="img/pria/4.png"
-                            class="card-img-top"
-                            alt="..."
-                    /></a>
-                    <div class="card-body">
-                        <p class="card-text">
-                            Some quick example text to build on the card title
-                            and make up the bulk of the card's content.
-                        </p>
-                        <a href="admin/produk"
-                            ><button class="btn btn-primary">
-                                Lihat Detail
-                            </button></a
-                        >
+        {{-- kolom 2 --}}
+        <div class="row" style="margin-top: -120px">
+         {{-- 1 --}}
+            <div class="col-lg-4 col-md-12" style="display: flex; justify-content: center">
+                <div class="containerCard">
+                    <div class="products">
+                        <div class="product">
+                            <div class="image">
+                                <img src="img/pria/1.png" alt="" />
+                            </div>
+                            <div class="namePrice">
+                                <h3>earphone</h3>
+                                <span>$ 15.99</span>
+                            </div>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur
+                                adipisicing elit. Accusamus, iusto.
+                            </p>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="bay">
+                                <button>buy now</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div
-                class="col-md-4"
-                style="display: flex; justify-content: center"
-            >
-                <div class="card" style="width: 18rem">
-                    <a href="img/pria/5.png"
-                        ><img
-                            src="img/pria/5.png"
-                            class="card-img-top"
-                            alt="..."
-                    /></a>
-                    <div class="card-body">
-                        <p class="card-text">
-                            Some quick example text to build on the card title
-                            and make up the bulk of the card's content.
-                        </p>
-                        <button class="btn btn-primary">Lihat Detail</button>
-                    </div>
-                </div>
+
+            {{-- 2 --}}
+            <div class="col-lg-4 col-md-12" style="display: flex; justify-content: center">
+            <div class="containerCard">
+               <div class="products">
+                   <div class="product">
+                       <div class="image">
+                           <img src="img/pria/2.png" alt="" />
+                       </div>
+                       <div class="namePrice">
+                           <h3>earphone</h3>
+                           <span>$ 15.99</span>
+                       </div>
+                       <p>
+                           Lorem, ipsum dolor sit amet consectetur
+                           adipisicing elit. Accusamus, iusto.
+                       </p>
+                       <div class="stars">
+                           <i class="fa-solid fa-star"></i>
+                           <i class="fa-solid fa-star"></i>
+                           <i class="fa-solid fa-star"></i>
+                           <i class="fa-solid fa-star"></i>
+                           <i class="fa-solid fa-star"></i>
+                       </div>
+                       <div class="bay">
+                           <button>buy now</button>
+                       </div>
+                   </div>
+               </div>
+           </div>
             </div>
+
+            {{-- 3 --}}
             <div
-                class="col-md-4"
+                class="col-lg-4 col-md-12"
                 style="display: flex; justify-content: center"
             >
-                <div class="card" style="width: 18rem">
-                    <a href="img/pria/3.png"
-                        ><img
-                            src="img/pria/3.png"
-                            class="card-img-top"
-                            alt="..."
-                    /></a>
-                    <div class="card-body">
-                        <p class="card-text">
-                            Some quick example text to build on the card title
-                            and make up the bulk of the card's content.
-                        </p>
-                        <button class="btn btn-primary">Lihat Detail</button>
-                    </div>
-                </div>
+            <div class="containerCard">
+               <div class="products">
+                   <div class="product">
+                       <div class="image">
+                           <img
+                               src="img/pria/1.png"
+                               alt=""
+                           />
+                       </div>
+                       <div class="namePrice">
+                           <h3>earphone</h3>
+                           <span>$ 15.99</span>
+                       </div>
+                       <p>
+                           Lorem, ipsum dolor sit amet consectetur
+                           adipisicing elit. Accusamus, iusto.
+                       </p>
+                       <div class="stars">
+                           <i class="fa-solid fa-star"></i>
+                           <i class="fa-solid fa-star"></i>
+                           <i class="fa-solid fa-star"></i>
+                           <i class="fa-solid fa-star"></i>
+                           <i class="fa-solid fa-star"></i>
+                       </div>
+                       <div class="bay">
+                           <button>buy now</button>
+                       </div>
+                   </div>
+               </div>
+           </div>
             </div>
         </div>
-    </div>
 </section>
 @endsection

@@ -6,7 +6,7 @@
 }
 .containerCard {
     width: 80vh;
-    height: 80vh;
+    height: 770px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -26,7 +26,8 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 4
+    60px;
 }
 .product {
     position: relative;
