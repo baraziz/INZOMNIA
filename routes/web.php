@@ -70,7 +70,7 @@ Route::get('/contactUs', function () {
     return view('contactUs', ['contact' => 'contactus']);
 });
 
-Route::get('/detailProduk1', function () {
+Route::get('/detailProduk', function () {
     return view('detailProduk');
 });
 Route::get('/cekout', function () {

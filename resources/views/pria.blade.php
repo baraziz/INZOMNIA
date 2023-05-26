@@ -53,7 +53,7 @@
                                 <i class="fa-solid fa-star"></i>
                             </div>
                             <div class="bay">
-                                <button>buy now</button>
+                                <a href="detailProduk"><button>buy now</button></a>
                             </div>
                         </div>
                     </div>
@@ -155,7 +155,7 @@
                                 <i class="fa-solid fa-star"></i>
                             </div>
                             <div class="bay">
-                                <button>buy now</button>
+                                <a href="detailProduk"><button>buy now</button></a>
                             </div>
                         </div>
                     </div>
