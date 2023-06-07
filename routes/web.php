@@ -23,7 +23,7 @@ Route::get('/', function () {
 
 Route::resource('admin/produk', ProdukController::class)->parameters([
     'produk' => 'barang'
-]);//->middleware(['auth', 'admin']);
+])->middleware(['auth', 'admin']);
 
 Route::controller(LoginController::class)->group(function () {
     Route::middleware(['guest'])->group(function () {
@@ -37,11 +37,10 @@ Route::get('/home', function () {
     return view('customer.homePage');
 })->name('home');
 
-Route::middleware(['auth'])->group(function () {
-    Route::controller(PakaianController::class)->group(function () {
-        Route::get('/pria', 'pria');
-        Route::get('/wanita', 'wanita');
-    });
+Route::controller(PakaianController::class)->group(function () {
+    Route::get('/pria', 'pria')->middleware('auth');
+    Route::get('/wanita', 'wanita')->middleware('auth');
+    Route::get('/detailProduk/{barang}', 'detailProduk'); //->middleware('auth');
 });
 
 
@@ -54,29 +53,28 @@ Route::get('/regis', function () {
     return view('regis');
 });
 
-Route::get('/aboutUs', function () {
-    return view('aboutUs', []);
-});
+// Route::get('/aboutUs', function () {
+//     return view('aboutUs', []);
+// });
 
-Route::get('/wanita', function () {
-    return view('waniTa', ['gender' => 'Wanita']);
-});
+// Route::get('/wanita', function () {
+//     return view('waniTa', ['gender' => 'Wanita']);
+// });
 
-Route::get('/pria', function () {
-    return view('pria', ['gender' => 'Pria']);
-});
+// Route::get('/pria', function () {
+//     return view('pria', ['gender' => 'Pria']);
+// });
 
-Route::get('/contactUs', function () {
-    return view('contactUs', ['contact' => 'contactus']);
-});
+// Route::get('/contactUs', function () {
+//     return view('contactUs', ['contact' => 'contactus']);
+// });
 
 Route::get('/detailProduk', function () {
     return view('detailProduk');
 });
-Route::get('/cekout', function () {
-    return view('cekout');
-});
+// Route::get('/cekout', function () {
+//     return view('customer.cekout');
+// });
 
-Route::get('/sesi' , [SessionController::class, 'index']);
-Route::post('/sesi/login' , [SessionController::class, 'loginPage']);
-
+Route::get('/sesi', [SessionController::class, 'index']);
+Route::post('/sesi/login', [SessionController::class, 'loginPage']);

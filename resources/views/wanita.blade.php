@@ -6,11 +6,11 @@
 <link rel="stylesheet" href="assets/css/card.css" />
 @section('content')
    {{-- Header --}}
-   <header class="text-center text-white d-flex masthead" style="background-image: url('img/bgpria.jpg')">
+   <header class="text-center text-white d-flex masthead" style="background-image: url('img/bg.png')">
       <div class="container my-auto">
          <div class="row">
             <div class="col-lg-10 mx-auto">
-               <h1 class="text-uppercase"><strong>Kategori Pria</strong></h1>
+               <h1 class="text-uppercase"><strong>Kategori Wanita</strong></h1>
                <hr />
             </div>
          </div>
@@ -25,7 +25,7 @@
 
    {{-- Item --}}
    <section id="pilPria">
-      <h2 class="text-center" style="margin-bottom: -100px">Pilihan Pria</h2>
+      <h2 class="text-center" style="margin-bottom: -100px">Pilihan Wanita</h2>
       <div class="container">
          {{-- Kolom 1 --}}
          <div class="row">

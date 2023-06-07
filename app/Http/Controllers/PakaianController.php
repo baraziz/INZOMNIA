@@ -10,12 +10,21 @@ class PakaianController extends Controller
 {
     public function pria()
     {
-        $products = Barang::all()->where('kategori', '=', 'pria');
-        return view('customer.pria', ['products' => $products]);
+        $products = Barang::all('id', 'nama', 'harga', 'deskripsi', 'foto', 'kategori')->where('kategori', '=', 'pria');
+
+        // return $products;
+        return view('pria', ['products' => $products]);
     }
+
     public function wanita()
     {
         $products = Barang::all()->where('kategori', '=', 'wanita');
-        return view('customer.wanita1', ['products' => $products]);
+        return view('wanita', ['products' => $products]);
+    }
+
+    public function detailProduk(Barang $barang)
+    {
+        // return $barang;
+        return view('detailProduk', $barang);
     }
 }
