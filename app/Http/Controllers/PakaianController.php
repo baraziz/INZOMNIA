@@ -24,7 +24,7 @@ class PakaianController extends Controller
 
     public function detailProduk(Barang $barang)
     {
-        // return $barang;
+        // return [$barang, 'title' => 'Detail Produk'];
         return view('detailProduk', $barang);
     }
 }
