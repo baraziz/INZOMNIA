@@ -20,4 +20,9 @@ class Barang extends Model
         'deskripsi',
         'foto'
     ];
+
+    public function ordered()
+    {
+        return $this->belongsToMany(User::class, 'order', 'barang_id', 'user_id');
+    }
 }

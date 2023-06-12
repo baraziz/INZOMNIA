@@ -41,10 +41,11 @@
                            MENU
                         </a>
                         <ul class="dropdown-menu">
+                           <li><a class="dropdown-item" href="/orderList">Persanan</a></li>
                            @can('admin')
                               <li><a class="dropdown-item" href="/admin/produk">Admin</a></li>
-                              <hr>
                            @endcan
+                           <hr>
                            <form action="/logout" method="post">
                               @csrf
                               <input type="submit" class="dropdown-item" value="Logout">

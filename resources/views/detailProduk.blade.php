@@ -74,37 +74,41 @@
                </div>
             </div>
             <div class="product-div-right">
-               <span class="product-name">(New) Analog Watch - For Men</span>
-               <span class="product-price">$ 50.25</span>
-               <p class="product-description">
-                  {{-- {!! $deskripsi !!} --}}
-               </p>
-               <div class="row">
-                  <div class="col">
-                     <p>S: {{ $ukuran_s }}</p>
+               <form action="/order/{{ $id }}" method="post">
+                  @csrf
+                  <span class="product-name">(New) Analog Watch - For Men</span>
+                  <span class="product-price">{{ $harga }}</span>
+                  <p class="product-description">
+                     {{-- {!! $deskripsi !!} --}}
+                  </p>
+                  <div class="row">
+                     <div class="col">
+                        <p>S: {{ $ukuran_s }}</p>
+                     </div>
+                     <div class="col">
+                        <p>M: {{ $ukuran_m }}</p>
+                     </div>
+                     <div class="col">
+                        <p>L: {{ $ukuran_l }}</p>
+                     </div>
+                     <div class="col">
+                        <p>XL: {{ $ukuran_xl }}</p>
+                     </div>
                   </div>
-                  <div class="col">
-                     <p>M: {{ $ukuran_m }}</p>
+                  <select name="ukuran" id="format" class="mt-1" style="">
+                     <option>Select Size</option>
+                     <option value="XL">XL</option>
+                     <option value="L">L</option>
+                     <option value="M">M</option>
+                     <option value="S">S</option>
+                  </select>
+                  <input type="number" value="1" name="jumlah" id="" />
+                  {{-- <input type="hidden" value="{{ $id }}" name="idBarang"> --}}
+                  <div class="btn-groups">
+                     {{-- <button type="button" class="add-cart-btn"><i class="fas fa-shopping-cart"></i>add to cart</button> --}}
+                     <button type="submit" class="buy-now-btn"><i class="fas fa-wallet"></i>buy now</button>
                   </div>
-                  <div class="col">
-                     <p>L: {{ $ukuran_l }}</p>
-                  </div>
-                  <div class="col">
-                     <p>XL: {{ $ukuran_xl }}</p>
-                  </div>
-               </div>
-               <select name="format" id="format" class="mt-1" style="">
-                  <option>Select Size</option>
-                  <option value="XL">XXL</option>
-                  <option value="L">XL</option>
-                  <option value="M">L</option>
-                  <option value="S">M</option>
-               </select>
-               <input type="number" value="1" name="" id="" />
-               <div class="btn-groups">
-                  {{-- <button type="button" class="add-cart-btn"><i class="fas fa-shopping-cart"></i>add to cart</button> --}}
-                  <button type="button" class="buy-now-btn"><i class="fas fa-wallet"></i>buy now</button>
-               </div>
+               </form>
             </div>
          </div>
       </div>

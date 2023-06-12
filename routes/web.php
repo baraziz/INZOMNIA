@@ -1,8 +1,10 @@
 <?php
 
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\OrderController;
 use App\Http\Controllers\PakaianController;
 use App\Http\Controllers\ProdukController;
+use App\Models\Order;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -40,8 +42,12 @@ Route::get('/home', function () {
 Route::controller(PakaianController::class)->group(function () {
     Route::get('/pria', 'pria')->middleware('auth');
     Route::get('/wanita', 'wanita')->middleware('auth');
-    Route::get('/detailProduk/{barang}', 'detailProduk'); //->middleware('auth');
+    Route::get('/detailProduk/{barang}', 'detailProduk')->middleware('auth');
 });
+
+// Route::post('/order/{barang}', [OrderController::class, 'order']);
+Route::get('/orderDetail', [OrderController::class, 'orderDetail']);
+Route::get('/orderList', [OrderController::class, 'orderList']);
 
 
 // nopal

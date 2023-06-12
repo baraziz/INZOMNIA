@@ -41,4 +41,10 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+
+    public function order()
+    {
+        return $this->belongsToMany(Barang::class, 'order', 'user_id', 'barang_id');
+    }
 }
