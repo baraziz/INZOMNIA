@@ -99,10 +99,18 @@
                   </div>
                   <select name="ukuran" id="format" class="mt-1" style="padding: 3px; border-radius: 5px;" >
                      <option>Select Size</option>
-                     <option value="XL">XL</option>
-                     <option value="L">L</option>
-                     <option value="M">M</option>
-                     <option value="S">S</option>
+                     @if ($ukuran_xl != 0 || $ukuran_xl != null)
+                        <option value="XL">XL</option>
+                     @endif
+                     @if ($ukuran_l != 0 || $ukuran_l != null)
+                        <option value="L">L</option>
+                     @endif
+                     @if ($ukuran_m != 0 || $ukuran_m != null)
+                        <option value="M">M</option>
+                     @endif
+                     @if ($ukuran_s != 0 || $ukuran_s != null)
+                        <option value="S">S</option>
+                     @endif
                   </select>
                   <input type="number" value="1" name="jumlah" id="" />
                   {{-- <input type="hidden" value="{{ $id }}" name="idBarang"> --}}

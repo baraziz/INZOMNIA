@@ -58,6 +58,7 @@ Route::get('/homePage', function () {
 Route::get('/regis', function () {
     return view('customer.regis');
 });
+Route::post('/regis', [LoginController::class, 'regis']);
 
 Route::get('/aboutUs', function () {
     return view('customer.aboutUs', []);
@@ -71,9 +72,9 @@ Route::get('/aboutUs', function () {
 //     return view('pria', ['gender' => 'Pria']);
 // });
 
-// Route::get('/contactUs', function () {
-//     return view('contactUs', ['contact' => 'contactus']);
-// });
+Route::get('/contactUs', function () {
+    return view('contactUs', ['contact' => 'contactus']);
+});
 
 Route::get('/detailProduk', function () {
     return view('detailProduk');
