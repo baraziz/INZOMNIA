@@ -45,7 +45,7 @@ Route::controller(PakaianController::class)->group(function () {
     Route::get('/detailProduk/{barang}', 'detailProduk')->middleware('auth');
 });
 
-// Route::post('/order/{barang}', [OrderController::class, 'order']);
+Route::post('/order/{barang}', [OrderController::class, 'order']);
 Route::get('/orderDetail', [OrderController::class, 'orderDetail']);
 Route::get('/orderList', [OrderController::class, 'orderList']);
 

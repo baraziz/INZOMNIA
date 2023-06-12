@@ -50,12 +50,13 @@ class OrderController extends Controller
             $barang->update($update);
         });
 
-        $order = Order::where('uuid', '=', (string)$validatedData['uuid'])->get();
+        // $order = Order::where('uuid', '=', (string)$validatedData['uuid'])->get();
 
-        return view('orderDetail');
+
+        return $this->orderDetail((string)$validatedData['uuid']);
     }
 
-    public function orderDetail()
+    public function orderDetail($id)
     {
         $data = collect(
             DB::table('order')
@@ -68,6 +69,7 @@ class OrderController extends Controller
                     'users.name',
                     'users.email'
                 )
+                ->where('order.uuid', $id)
                 ->first()
         );
 
