@@ -41,7 +41,7 @@
                            MENU
                         </a>
                         <ul class="dropdown-menu">
-                           <li><a class="dropdown-item" href="/orderList">Persanan</a></li>
+                           <li><a class="dropdown-item" href="/orderList">Pesanan</a></li>
                            @can('admin')
                               <li><a class="dropdown-item" href="/admin/produk">Admin</a></li>
                            @endcan
