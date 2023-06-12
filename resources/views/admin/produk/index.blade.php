@@ -20,8 +20,8 @@
       @endif
       
       
-      <div class="container text-start">
-         <a class="btn btn-primary mb-3" href="/admin/produk/create">Tambah Barang</a>
+      <div class="container text-end">
+         <a class="btn btn-danger mb-3" href="/admin/produk/create">Tambah Barang</a>
       </div>
 
       <table class="table table-striped table-bordered table-light">

@@ -59,7 +59,7 @@
    <nav class="navbar bg-light">
       <div class="container">
          <a class="navbar-brand" href="/">
-            <p style="font-family: 'Baskervville'; font-style: normal;font-weight: 400;font-size: 30px;text-align: center;color: #000000;">INSOMNIA ZERO</p>
+            <p style="font-family: 'Baskervville'; font-style: normal;font-weight: 400;font-size: 30px;text-align: center;color: #f05f40;">INSOMNIA ZERO</p>
             <p style="margin-top: -20px;font-family: 'Poppins'; font-style: italic; font-weight: 300; font-size: 18px; line-height: 27px; color: rgba(0, 0, 0, 0.5)" class="text-center">insomniazero.com/detailProduk</p>
          </a>
       </div>
@@ -70,32 +70,34 @@
          <div class="product-div">
             <div class="product-div-left">
                <div class="container ">
-                  <img class="col-6 offset-4" src="{{ asset('storage/' . $foto) }}" alt="watch" style=""/>
+                  <img class="col-lg-7 offset-5" src="{{ asset('storage/' . $foto) }}" alt="watch"/>
                </div>
             </div>
             <div class="product-div-right">
                <form action="/order/{{ $id }}" method="post">
                   @csrf
-                  <span class="product-name">{{$nama}}</span>
-                  <span class="product-price">IDR{{ $harga }}</span>
+                  <span class="product-name" style="margin-bottom: -5px; margin-top: 20px">Nama Produk : {{$nama}}</span>
+                  <span class="product-price">Harga : IDR{{ $harga }}</span>
                   <p class="product-description">
-                     {{-- {!! $deskripsi !!} --}}
+                     {!! $deskripsi !!} 
+                     
                   </p>
+                  
                   <div class="row">
-                     <div class="col">
+                     <div class="col" style="margin-right: -100px">
                         <p>S: {{ $ukuran_s }}</p>
                      </div>
-                     <div class="col">
+                     <div class="col" style="margin-right: -100px">
                         <p>M: {{ $ukuran_m }}</p>
                      </div>
-                     <div class="col">
+                     <div class="col" style="margin-right: -100px">
                         <p>L: {{ $ukuran_l }}</p>
                      </div>
                      <div class="col">
                         <p>XL: {{ $ukuran_xl }}</p>
                      </div>
                   </div>
-                  <select name="ukuran" id="format" class="mt-1" style="">
+                  <select name="ukuran" id="format" class="mt-1" style="padding: 3px; border-radius: 5px;" >
                      <option>Select Size</option>
                      <option value="XL">XL</option>
                      <option value="L">L</option>
@@ -106,7 +108,7 @@
                   {{-- <input type="hidden" value="{{ $id }}" name="idBarang"> --}}
                   <div class="btn-groups">
                      {{-- <button type="button" class="add-cart-btn"><i class="fas fa-shopping-cart"></i>add to cart</button> --}}
-                     <button type="submit" class="buy-now-btn"><i class="fas fa-wallet"></i>buy now</button>
+                     <button type="submit" class="buy-now-btn" style="border-radius: 5px; margin-top:-10px">buy now</button>
                   </div>
                </form>
             </div>
