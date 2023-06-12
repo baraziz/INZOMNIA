@@ -76,7 +76,7 @@
             <div class="product-div-right">
                <form action="/order/{{ $id }}" method="post">
                   @csrf
-                  <span class="product-name">(New) Analog Watch - For Men</span>
+                  <span class="product-name">{{$nama}}</span>
                   <span class="product-price">{{ $harga }}</span>
                   <p class="product-description">
                      {{-- {!! $deskripsi !!} --}}

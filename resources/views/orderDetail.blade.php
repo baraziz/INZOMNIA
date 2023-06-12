@@ -54,7 +54,7 @@
          </div>
          <div class="row">
             <div class="col">
-               <p>PEMBAYARAN MELALUI REK: *****, KIRIM BUKTI PEMBARAN PADA NOMOR whatsapp ******</p>
+               <p>PEMBAYARAN MELALUI REK: *****, KIRIM BUKTI PEMBAYARAN PADA LINK  <a href="https://wa.me/6285799857403.">BERIKUT</a></p>
             </div>
          </div>
       </div>

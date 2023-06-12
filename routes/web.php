@@ -56,12 +56,12 @@ Route::get('/homePage', function () {
     return view('homePage');
 });
 Route::get('/regis', function () {
-    return view('regis');
+    return view('customer.regis');
 });
 
-// Route::get('/aboutUs', function () {
-//     return view('aboutUs', []);
-// });
+Route::get('/aboutUs', function () {
+    return view('customer.aboutUs', []);
+});
 
 // Route::get('/wanita', function () {
 //     return view('waniTa', ['gender' => 'Wanita']);
