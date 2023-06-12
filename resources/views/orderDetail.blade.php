@@ -58,6 +58,7 @@
             </div>
          </div>
       </div>
-      <a class="btn btn-primary" href="/home" role="button">KEMBALI KE HOME</a>
+      <a class="btn btn-primary" href="/home" role="button">HOME</a>
+      <a class="btn btn-primary" href="/home#category" role="button">Lanjut Belanja</a>
    </div>
 @endsection
