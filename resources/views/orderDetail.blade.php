@@ -1,7 +1,9 @@
 @extends('customer.layout.layout')
 
 @section('content')
+
    <div class="container border rounded-3 my-5 px-5 py-3">
+
       <div class="container">
          <div class="row">
             <div class="col-3">

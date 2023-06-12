@@ -6,14 +6,17 @@
 </div>
 
 <body class="bg-primary text-white">
+   
    <div class="container my-5 pt-5">
+      <h3 class="pt-1 fw-bold text-center pb-3">Riwayat pesanan</h3>
       @foreach ($data as $info)
-         <div class="container bg-secondary border rounded-3 px-5 py-3">
+      
+         <div class="container bg-light text-black border rounded-3 px-5 py-3">
             <div class="row">
                <div class="container col-2 align-middle text-center">
                   <img class="img-thumbnail col-8" src="{{ asset('storage/' . $info->foto_barang) }}" alt="">
                </div>
-               <div class="col align-middle">
+               <div class="col align-middle pt-4">
                   <div class="row">
                      <div class="col-2">
                         <p>Code</p>
@@ -38,10 +41,8 @@
                         <p>: {{ $info->totalHarga }}</p>
                      </div>
                   </div>
-
                </div>
             </div>
-
          </div>
       @endforeach
    </div>
