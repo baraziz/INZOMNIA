@@ -65,19 +65,19 @@
       </div>
    </nav>
 
-   <div class="main-wrapper" style="margin-top: -80px">
+   <div class="main-wrapper" style="margin-top: -100px">
       <div class="container">
          <div class="product-div">
             <div class="product-div-left">
                <div class="container ">
-                  <img class=" col-6" src="{{ asset('storage/' . $foto) }}" alt="watch" />
+                  <img class="col-6 offset-4" src="{{ asset('storage/' . $foto) }}" alt="watch" style=""/>
                </div>
             </div>
             <div class="product-div-right">
                <form action="/order/{{ $id }}" method="post">
                   @csrf
                   <span class="product-name">{{$nama}}</span>
-                  <span class="product-price">{{ $harga }}</span>
+                  <span class="product-price">IDR{{ $harga }}</span>
                   <p class="product-description">
                      {{-- {!! $deskripsi !!} --}}
                   </p>

@@ -1,7 +1,7 @@
 @extends('admin.layout.navbar')
 
 @if (isset($title))
-   @section('nav-title', $title)
+   @section('nav-title', 'Tambah Produk')
 @endif
 
 
@@ -9,17 +9,18 @@
    @parent
 @endsection
 
+
 @section('content')
    <div class="container mt-5 border rounded-3 pt-3">
-
       @if (session('status'))
          <div class="alert alert-success alert-dismissible fade show" role="alert">
             {{ session('status') }}
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
          </div>
       @endif
-
-      <div class="container text-end">
+      
+      
+      <div class="container text-start">
          <a class="btn btn-primary mb-3" href="/admin/produk/create">Tambah Barang</a>
       </div>
 
