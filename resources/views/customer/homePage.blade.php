@@ -118,7 +118,7 @@
             <h3>Farah Diva Ayuningtyas</h3>
             <h5>NIM : 4612421021</h5>
             <div class="icons">
-               <a href="#"><i class="ri-instagram-line"></i></a>
+               <a href="https://www.instagram.com/farahdvaa_/"><i class="ri-instagram-line"></i></a>
                <a href="#"><i class="ri-linkedin-fill"></i></a>
             </div>
          </div>
@@ -127,7 +127,7 @@
             <h3>Nadhifah Nur Annisa Reska</h3>
             <h5>NIM : 4612421027</h5>
             <div class="icons">
-               <a href="#"><i class="ri-instagram-line"></i></a>
+               <a href="https://www.instagram.com/nadhifasshh/"><i class="ri-instagram-line"></i></a>
                <a href="#"><i class="ri-linkedin-fill"></i></a>
             </div>
          </div>
@@ -136,7 +136,7 @@
             <h3>Baharudin Bariq Aziz</h3>
             <h5>NIM : 4612421030</h5>
             <div class="icons">
-               <a href="#"><i class="ri-instagram-line"></i></a>
+               <a href="https://www.instagram.com/baharudinaziz483/"><i class="ri-instagram-line"></i></a>
                <a href="#"><i class="ri-linkedin-fill"></i></a>
             </div>
          </div>
@@ -145,7 +145,7 @@
             <h3>Naufal Darma Yuda Pratama</h3>
             <h5>NIM : 4612421038</h5>
             <div class="icons">
-               <a href="#"><i class="ri-instagram-line"></i></a>
+               <a href="https://www.instagram.com/naufalpratam4/"><i class="ri-instagram-line"></i></a>
                <a href="#"><i class="ri-linkedin-fill"></i></a>
             </div>
          </div>
@@ -154,7 +154,7 @@
             <h3>Ichrima Aura Qoshirotu Thorfi</h3>
             <h5>NIM : 4612421043</h5>
             <div class="icons">
-               <a href="#"><i class="ri-instagram-line"></i></a>
+               <a href="https://www.instagram.com/ichrimaura/"><i class="ri-instagram-line"></i></a>
                <a href="#"><i class="ri-linkedin-fill"></i></a>
             </div>
          </div>

@@ -38,7 +38,7 @@
                         <p>Harga</p>
                      </div>
                      <div class="col-6">
-                        <p>: {{ $info->totalHarga }}</p>
+                        <p>: IDR {{ $info->totalHarga }}</p>
                      </div>
                   </div>
                </div>

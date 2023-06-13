@@ -68,6 +68,6 @@
          </div>
       </div>
       <a class="btn btn-primary" href="/home" role="button">HOME</a>
-      <a class="btn btn-primary" href="/home#category" role="button">Lanjut Belanja</a>
+      <a class="btn btn-primary" href="/done" role="button">Lanjut Pembayaran</a>
    </div>
 @endsection

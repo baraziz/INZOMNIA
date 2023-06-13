@@ -79,9 +79,13 @@ Route::get('/contactUs', function () {
 Route::get('/detailProduk', function () {
     return view('detailProduk');
 });
+Route::get('/done', function () {
+    return view('done');
+});
 // Route::get('/cekout', function () {
 //     return view('customer.cekout');
 // });
 
 Route::get('/sesi', [SessionController::class, 'index']);
 Route::post('/sesi/login', [SessionController::class, 'loginPage']);
+
