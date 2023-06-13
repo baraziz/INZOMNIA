@@ -140,8 +140,12 @@
                <i class="bx bx-user"></i>
             </div>
             <div class="input-field">
+               <input type="text" class="input" placeholder="Alamat" name="name" />
+               <i class='bx bx-street-view' ></i> 
+            </div>
+            <div class="input-field">
                <input type="email" class="input" placeholder="Email" name="email" />
-               <i class="bx bx-lock-alt"></i>
+               <i class='bx bx-envelope'></i>
             </div>
             <div class="input-field">
                <input type="password" class="input" placeholder="password" name="password" />
