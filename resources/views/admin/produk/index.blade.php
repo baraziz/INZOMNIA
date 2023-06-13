@@ -21,7 +21,7 @@
       
       
       <div class="container text-end">
-         <a class="btn btn-danger mb-3" href="/admin/produk/create">Tambah Barang</a>
+         <a class="btn mb-3" style="background: #f05f40; color: white" href="/admin/produk/create">Tambah Barang</a>
       </div>
 
       <table class="table table-striped table-bordered table-light">

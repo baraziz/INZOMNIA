@@ -14,7 +14,7 @@
 
 <body>
    @section('side-navbar')
-      <nav class="navbar navbar-dark bg-danger text-white">
+      <nav class="navbar navbar-dark text-white" style="background: #f05f40">
          <div class="container">
             <a class="navbar-brand" href="#">@yield('nav-title', 'ADMIN')</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
