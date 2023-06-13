@@ -67,6 +67,7 @@ class OrderController extends Controller
                     'barangs.nama as nama_barang',
                     'barangs.foto as foto_barang',
                     'users.name',
+                    'users.alamat',
                     'users.email'
                 )
                 ->where('order.uuid', $id)
@@ -87,6 +88,7 @@ class OrderController extends Controller
                     'barangs.nama as nama_barang',
                     'barangs.foto as foto_barang',
                     'users.name',
+                    'users.alamat',
                     'users.email'
                 )
                 ->where('order.user_id', Auth::id())

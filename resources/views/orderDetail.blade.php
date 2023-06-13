@@ -1,7 +1,6 @@
 @extends('customer.layout.layout')
 
 @section('content')
-
    <div class="container border rounded-3 my-5 px-5 py-3">
 
       <div class="container">
@@ -20,6 +19,14 @@
             </div>
             <div class="col">
                <p>: {{ $name }}</p>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-3">
+               <p>Alamat Pembeli</p>
+            </div>
+            <div class="col">
+               <p>: {{ $alamat }}</p>
             </div>
          </div>
          <div class="row">
@@ -56,7 +63,7 @@
          </div>
          <div class="row">
             <div class="col">
-               <p>PEMBAYARAN MELALUI REK: *****, KIRIM BUKTI PEMBAYARAN PADA LINK  <a href="https://wa.me/6285799857403.">BERIKUT</a></p>
+               <p>PEMBAYARAN MELALUI REK: *****, KIRIM BUKTI PEMBAYARAN PADA LINK <a href="https://wa.me/6285799857403.">BERIKUT</a></p>
             </div>
          </div>
       </div>
